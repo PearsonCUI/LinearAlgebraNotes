@@ -1,0 +1,1 @@
+For those who do not have a library to deal with linear algebra, here are some emergency coding supplies in C++.

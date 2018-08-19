@@ -469,8 +469,12 @@ mat3x3 mat3x3_map_vec_to_vec(vec3 aVec, vec3 bVec)
 	
 	vec3 cross = vec3_cross_vec3(aVec, bVec);
 	vec3_set_length(&cross, 1);
-    
-    if (cross.x != cross.x) cross = {1, 0, 0};
+
+	if (cross.x != cross.x)
+	{
+		cross = make_vec3(1, 0, 0);
+	}	
+        
 
     double angle = vec3_angle_with_vec3(aVec, bVec);
     

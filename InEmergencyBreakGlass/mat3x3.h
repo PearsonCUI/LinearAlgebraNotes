@@ -33,6 +33,7 @@ std::string mat3x3_desc(mat3x3 mat);
 
 mat3x3 mat3x3_inverse(mat3x3 &mat);
 mat3x3 mat3x3_from_unit_cell(double a, double b, double c, double alpha, double beta, double gamma);
+
 mat3x3 mat3x3_from_unit_cell(double *unitCell);
 
 void mat3x3_mult_scalar(mat3x3 *mat, double scale);
